@@ -12,6 +12,8 @@ Turn any website into its own app window, like Chrome's "Install" but for every 
 - Adds a Start menu shortcut (and a desktop one if you want)
 - One list to open, edit, copy the address of, or remove every app
 - Open any app's website in a different browser from the right-click menu
+- Import the apps Chrome, Edge, Helium, Brave and Firefox already made, then optionally remove their old shortcuts
+- One click to repair Start menu or desktop shortcuts that were deleted
 
 > This application is built by AI. I made this for myself and I'm uploading it to GitHub for backup and to share in case anyone can get any use out of it. It's pretty specific to my setup and my needs, but if you can get any use out of it, then enjoy.
 >
@@ -19,20 +21,16 @@ Turn any website into its own app window, like Chrome's "Install" but for every 
 
 ## Download
 
-**Latest version: v1.0** (Oct 16, 2026)
+**Latest version: v1.1** (Oct 29, 2026)
 
-- [WebRunner_v1.0_no-install.zip](https://github.com/codenomics/WebRunner/releases/download/v1.0/WebRunner_v1.0_no-install.zip) - 74 KB
-- [WebRunner_v1.0_Setup.exe](https://github.com/codenomics/WebRunner/releases/download/v1.0/WebRunner_v1.0_Setup.exe) - 137 KB
-- [WebRunner_v1.0_source.zip](https://github.com/codenomics/WebRunner/releases/download/v1.0/WebRunner_v1.0_source.zip) - 64 KB
+- [WebRunner_v1.1_no-install.zip](https://github.com/codenomics/WebRunner/releases/download/v1.1/WebRunner_v1.1_no-install.zip) - 81 KB
+- [WebRunner_v1.1_Setup.exe](https://github.com/codenomics/WebRunner/releases/download/v1.1/WebRunner_v1.1_Setup.exe) - 144 KB
+- [WebRunner_v1.1_source.zip](https://github.com/codenomics/WebRunner/releases/download/v1.1/WebRunner_v1.1_source.zip) - 71 KB
 
-What's new in v1.0:
+What's new in v1.1:
 
-- First release
-- Turn any website into its own app window, with a shortcut in the Start menu or on the desktop
-- One list to add, edit, open and remove all your web apps
-- Pick the browser for each app, including Chrome-type browsers and Firefox
-- Normal browser profile or a separate profile for each app, with an optional private window
-- Finds the site's name and icon, or use your own picture
+- New: More button with "Import apps" - brings in the apps Chrome, Edge, Helium and Firefox already made, with their icons. Tick which ones, or import all, and optionally send their old shortcuts to the Recycle Bin
+- New: More button with "Repair missing shortcuts" - puts back any Start menu or desktop shortcut that was deleted or points at the wrong thing
 
 Older versions are on the [Releases page](https://github.com/codenomics/WebRunner/releases).
 
@@ -102,6 +100,13 @@ To add a web app:
   6. Click Add app. A shortcut appears in your Start menu (and on the desktop
      if you ticked that).
 
+To bring in apps your browsers already made: click More > Import apps.
+WebRunner lists them. Tick the ones you want and click Import selected (or
+Import all). Tick "Also delete the old shortcuts" to send the browser's own
+shortcuts for them to the Recycle Bin. Firefox apps get their own profile,
+so you sign in once to each. If a shortcut ever goes missing, click
+More > Repair missing shortcuts.
+
 The list: double-click or press Enter to open an app, F2 to edit it, Delete to
 remove it. Right-click for more: open the website in another browser, copy the
 address, edit, remove.
@@ -127,6 +132,8 @@ GOOD TO KNOW
 - The browser's own window menu (the three dots, top right, in Chrome-type
   browsers) usually has Copy URL and an option to open the page in the normal
   browser.
+- Importing and deleting old shortcuts only touches the shortcuts. The app
+  stays in the browser's own apps page until you uninstall it there.
 - Removing an app deletes its shortcuts, and its own profile folder if it had
   one.
 - Your list and settings are kept in %APPDATA%\WebRunner. A log is written
